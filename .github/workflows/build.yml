@@ -26,6 +26,7 @@ jobs:
       - name: Build
         run: ./gradlew build
   analyze:
+    name: Analyze
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -52,7 +53,7 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
       - name: Analyze
-        run: ./gradlew build sonar
+        run: ./gradlew build jacocoTestReport sonar
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   dependency-submission:

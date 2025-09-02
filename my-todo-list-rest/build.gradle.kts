@@ -1,5 +1,6 @@
 plugins {
   id("java")
+  id("jacoco")
   alias(libs.plugins.spring.boot)
   alias(libs.plugins.lombok)
 }
@@ -18,7 +19,20 @@ dependencies {
 
   runtimeOnly("org.postgresql:postgresql")
 
+  testImplementation(libs.spring.boot.test)
   testRuntimeOnly("com.h2database:h2")
 
   implementation(libs.spring.boot.devtools)
+}
+
+tasks {
+  test {
+    useJUnitPlatform()
+  }
+  jacocoTestReport {
+    reports {
+      xml.required.set(true)
+      html.required.set(false)
+    }
+  }
 }
