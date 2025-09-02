@@ -23,10 +23,3 @@ dependencies {
 
   implementation(libs.spring.boot.devtools)
 }
-
-sonar {
-  properties {
-    property("sonar.projectKey", "ch.gatzka:my-todo-list-rest")
-    property("sonar.organization", "philippgatzka")
-  }
-}

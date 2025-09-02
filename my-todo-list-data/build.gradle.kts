@@ -17,10 +17,3 @@ dependencies {
 
   annotationProcessor(libs.mapstruct.processor)
 }
-
-sonar {
-  properties{
-    property("sonar.projectKey", "ch.gatzka:my-todo-list-data")
-    property("sonar.organization", "philippgatzka")
-  }
-}
