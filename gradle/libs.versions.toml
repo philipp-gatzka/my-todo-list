@@ -1,0 +1,25 @@
+[versions]
+jwt = "0.13.0"
+mapstruct = "1.6.3"
+spring-boot = "3.5.5"
+
+[plugins]
+lombok = { id = "io.freefair.lombok", version = "8.14.2"}
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+
+
+[libraries]
+spring-boot-dependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "spring-boot" }
+spring-boot-jpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa" }
+spring-boot-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
+spring-boot-web = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
+spring-boot-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
+spring-boot-devtools = { group = "org.springframework.boot", name = "spring-boot-devtools" }
+
+jwt-api = { group = "io.jsonwebtoken", name = "jjwt-api", version.ref = "jwt"}
+jwt-impl = { group = "io.jsonwebtoken", name = "jjwt-impl", version.ref = "jwt"}
+jwt-jackson = { group = "io.jsonwebtoken", name = "jjwt-jackson", version.ref = "jwt"}
+
+mapstruct = { group = "org.mapstruct", name = "mapstruct", version.ref = "mapstruct"}
+mapstruct-processor = { group = "org.mapstruct", name = "mapstruct-processor", version.ref = "mapstruct"}
+

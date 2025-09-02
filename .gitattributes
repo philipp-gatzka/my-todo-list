@@ -1,0 +1,32 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Java source files
+*.java text diff=java
+*.kt text diff=kotlin
+*.kts text diff=kotlin
+*.groovy text diff=java
+
+# Gradle files
+*.gradle text diff=java
+gradlew text eol=lf
+*.bat text eol=crlf
+
+# Properties & config files
+*.properties text
+*.xml text
+*.yaml text
+*.yml text
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+
+# Binary files
+*.jar binary
+*.war binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.class binary
+*.pdf binary

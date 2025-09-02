@@ -1,0 +1,6 @@
+/.gradle/
+/.idea/
+/build/
+/my-todo-list-data/build/
+/my-todo-list-rest/build/
+/my-todo-list.iml
