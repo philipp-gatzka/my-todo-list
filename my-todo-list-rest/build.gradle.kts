@@ -4,6 +4,8 @@ plugins {
   alias(libs.plugins.lombok)
 }
 
+java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+
 dependencies {
   implementation(project(":my-todo-list-data"))
   implementation(platform(libs.spring.boot.dependencies))

@@ -3,6 +3,8 @@ plugins {
   alias(libs.plugins.lombok)
 }
 
+java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+
 dependencies {
   api(platform(libs.spring.boot.dependencies))
   api(libs.spring.boot.jpa)
