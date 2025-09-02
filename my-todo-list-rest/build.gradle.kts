@@ -2,6 +2,7 @@ plugins {
   id("java")
   alias(libs.plugins.spring.boot)
   alias(libs.plugins.lombok)
+  alias(libs.plugins.sonar)
 }
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
@@ -21,4 +22,11 @@ dependencies {
   testRuntimeOnly("com.h2database:h2")
 
   implementation(libs.spring.boot.devtools)
+}
+
+sonar {
+  properties {
+    "sonar.projectKey" to "ch.gatzka:my-todo-list-rest"
+    "sonar.organization" to "philippgatzka"
+  }
 }

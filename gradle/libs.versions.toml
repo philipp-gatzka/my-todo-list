@@ -4,9 +4,9 @@ mapstruct = "1.6.3"
 spring-boot = "3.5.5"
 
 [plugins]
-lombok = { id = "io.freefair.lombok", version = "8.14.2"}
+lombok = { id = "io.freefair.lombok", version = "8.14.2" }
 spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
-
+sonar = { id = "org.sonarqube", version = "6.3.1.5724" }
 
 [libraries]
 spring-boot-dependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "spring-boot" }
@@ -16,10 +16,10 @@ spring-boot-web = { group = "org.springframework.boot", name = "spring-boot-star
 spring-boot-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
 spring-boot-devtools = { group = "org.springframework.boot", name = "spring-boot-devtools" }
 
-jwt-api = { group = "io.jsonwebtoken", name = "jjwt-api", version.ref = "jwt"}
-jwt-impl = { group = "io.jsonwebtoken", name = "jjwt-impl", version.ref = "jwt"}
-jwt-jackson = { group = "io.jsonwebtoken", name = "jjwt-jackson", version.ref = "jwt"}
+jwt-api = { group = "io.jsonwebtoken", name = "jjwt-api", version.ref = "jwt" }
+jwt-impl = { group = "io.jsonwebtoken", name = "jjwt-impl", version.ref = "jwt" }
+jwt-jackson = { group = "io.jsonwebtoken", name = "jjwt-jackson", version.ref = "jwt" }
 
-mapstruct = { group = "org.mapstruct", name = "mapstruct", version.ref = "mapstruct"}
-mapstruct-processor = { group = "org.mapstruct", name = "mapstruct-processor", version.ref = "mapstruct"}
+mapstruct = { group = "org.mapstruct", name = "mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { group = "org.mapstruct", name = "mapstruct-processor", version.ref = "mapstruct" }
 
