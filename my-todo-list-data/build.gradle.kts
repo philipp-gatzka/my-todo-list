@@ -1,7 +1,6 @@
 plugins {
   id("java-library")
   alias(libs.plugins.lombok)
-  alias(libs.plugins.sonar)
 }
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))

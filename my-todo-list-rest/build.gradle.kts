@@ -2,7 +2,6 @@ plugins {
   id("java")
   alias(libs.plugins.spring.boot)
   alias(libs.plugins.lombok)
-  alias(libs.plugins.sonar)
 }
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
