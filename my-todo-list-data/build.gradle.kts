@@ -20,7 +20,7 @@ dependencies {
 
 sonar {
   properties{
-    "sonar.projectKey" to "ch.gatzka:my-todo-list-data"
-    "sonar.organization" to "philippgatzka"
+    property("sonar.projectKey", "ch.gatzka:my-todo-list-data")
+    property("sonar.organization", "philippgatzka")
   }
 }
